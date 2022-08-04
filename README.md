@@ -47,3 +47,10 @@ my text here
   
 my text here
 </details>
+
+## Lessons Learned
+
+- Regular expressions can be fun but also my worst enemy! Lots of trial and error, but finally found patterns that worked for parsing what I needed out of the HOLLIS data. Two sites were useful for testing: [Pythex](https://pythex.org/) or [Regex101](https://regex101.com/).
+- Learned new methods to make lists of metadata and zip them together into records.
+- This project gave me a great opportunity to practice making 'for loops' which I was previously looking for gain experience with!
+- I carried these new skills in regular expressions, making 'for loops', and zipping data lists together into other projects and harvesters, so making processes repeatable is exponentially beneficial!
