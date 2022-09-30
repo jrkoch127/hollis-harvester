@@ -12,15 +12,10 @@ The main overall goal of this HOLLIS Harvester was to write a process that could
 
 I split up my overal goal into three major tasks:
 
-1. [Task 1: Harvest Data from HOLLIS](#hollis-api)
-2. [Task 2: Data Review & Curation](#curation)
-3. [Task 3: Data Ingest & ADS Libraries](#libraries)
-
 <details>
- <summary>Task 1 Details</summary>
- 
-## <a name="hollis-api">Task 1: Harvest Data from HOLLIS</a>
-  
+ <summary>Task 1: Harvest Data from HOLLIS </summary>
+
+## Task 1: Harvest Data from HOLLIS
 First we connect to the LibraryCloud API where HOLLIS allows for retrieving the book metadata. The python process for harvesting the data now can be run with the [HOLLIS1_Harvester](https://github.com/jrkoch127/hollis-harvester/blob/main/HOLLIS1_Harvester.ipynb) notebook. The only thing to change is the header/input data: change the date (YYMM), the LC classification (QB, QC, etc.), and make sure there is a directory ready on my local drive where I will store the results.
 
 ```
@@ -42,10 +37,9 @@ _Important note for later_: Copy all the HOLLIS ids from the 'hollis_results.xls
 </details>
 
 <details>
- <summary>Task 2 Details</summary>
- 
-## <a name="curation">Task 2: Data Review & Curation</a>
- 
+ <summary>Task 2: Data Review & Curation </summary>
+
+## Task 2: Data Review & Curation
 **Data Review:**
 After we have successfully harvested data from HOLLIS, it's time to manually review items for metadata updates and curation of new items.
 
@@ -68,10 +62,9 @@ The first part of the notebook will transform the records that need metadata upd
 </details>
 
 <details>
- <summary>Task 3 Details</summary>
- 
-## <a name="libraries">Data Ingest & ADS Libraries</a>
-  
+ <summary>Task 3: Data Ingest & ADS Libraries </summary>
+
+## Task 3: Data Ingest & ADS Libraries
 Finally, when the review and curation is complete, we'll simply update the python scripts for the serializers ('serializer_updates.py' & 'serializer_ingests.py'). After running the serializers, we'll have ADS tagged format records to send to ADS.
 
 Once the records are added to the system, I'll copy the bibcodes from the ref results, the metadata updates, and the new ingests, and put them into my bibocdes list to update the ADS libraries (hollis_library.xlsx). From that point, I can run the [HOLLIS3_Libraries](https://github.com/jrkoch127/hollis-harvester/blob/main/HOLLIS3_Libraries.ipynb) notebook and add the new bibcodes to my existing library. Alternatively, I have the option to make new libraries as I see fit (I may make new libraries for each classification).
