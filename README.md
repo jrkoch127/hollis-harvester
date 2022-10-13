@@ -8,7 +8,7 @@ In this document I will outline the goals I established, the steps I took to acc
 
 The source data was retrieved from ([Harvard's LibraryCloud API](https://wiki.harvard.edu/confluence/display/LibraryStaffDoc/LibraryCloud)). Metadata retrieved includes: author name(s), publisher name and location, title, abstract, publication date (year), DOI if available, ISBN if available, OCLC number if available, and HOLLIS catalog identifier as assigned by Harvard.
 
-The main overall goal of this HOLLIS Harvester was to write a process that could retrieve data for individual books, eliminate existing items in ADS from the set, and then curate records for new items to ingest into ADS. We start by retrieving books with an LC classification number QB. These are all books related to astronomy and astrophysics. After the process is finalized and complete, we'll expand the harvest to include other subject areas. So my second priority was to make this process repeatable for other subject areas in the future, as necessary for expanding coverage in the ADS. 
+The main overall goal of this HOLLIS Harvester was to write a process that could retrieve data for individual books, eliminate existing items in ADS from the set, and then curate records for new items to ingest into ADS. We start by retrieving books with an LC classification number QB - books related to astronomy and astrophysics. After the process is finalized and complete, we'll expand the harvest to include other subject areas (such as QC for Physics, QE for Earth Sciences). Thus, my second priority was to make this process repeatable for other subject areas in the future, as necessary for expanding coverage in the ADS. 
 
 I split up my overal goal into three major tasks:
 
